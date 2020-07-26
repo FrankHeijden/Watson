@@ -1,0 +1,9 @@
+name: Watson
+main: dev.frankheijden.watson.Watson
+version: ${version}
+author: FrankHeijden
+api-version: "1.13"
+
+commands:
+  watson:
+    usage: "/<command>"

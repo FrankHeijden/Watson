@@ -1,0 +1,8 @@
+messages:
+  list:
+    prefix: "&aWatson Players: "
+    allowed: "&2"
+    disallowed: "&c"
+    seperator: "&a, "
+  reload: "&aReloaded watson configurations!"
+  no_permission: "&cYou don't have permission to use that command!"

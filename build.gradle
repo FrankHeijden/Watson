@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'dev.frankheijden.watson'
+version '1.0.0'
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+    maven { url 'https://papermc.io/repo/repository/maven-public/' }
+}
+
+dependencies {
+    compileOnly 'com.destroystokyo.paper:paper-api:1.16.1-R0.1-SNAPSHOT'
+}
+
+processResources {
+    from('src/main/resources') {
+        include 'plugin.yml'
+        expand(version: project.version)
+    }
+}
