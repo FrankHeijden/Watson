@@ -5,5 +5,7 @@ author: FrankHeijden
 api-version: "1.13"
 
 commands:
-  watson:
+  watsonserver:
     usage: "/<command>"
+    aliases:
+    - "ws"
