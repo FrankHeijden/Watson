@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'dev.frankheijden.watson'
-version '1.0.0'
+version '1.0.1'
 sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
 
 repositories {
