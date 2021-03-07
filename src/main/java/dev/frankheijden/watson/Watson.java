@@ -35,7 +35,7 @@ public class Watson extends JavaPlugin {
         getServer().getMessenger().registerOutgoingPluginChannel(this, PLUGIN_CHANNEL);
         getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
 
-        registerCommand("watson", new CommandWatson(this));
+        registerCommand("watsonserver", new CommandWatson(this));
     }
 
     private void registerCommand(String commandName, Object obj) {
