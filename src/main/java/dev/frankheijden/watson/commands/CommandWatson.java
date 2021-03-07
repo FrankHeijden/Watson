@@ -35,9 +35,6 @@ public class CommandWatson implements CommandExecutor, TabExecutor {
                 String disallowed = plugin.getRawMessage("list.disallowed").orElse("");
                 List<Player> players = plugin.getOnlineWatsonPlayers();
                 for (int i = 0; i < players.size(); i++) {
-                    if (i < players.size() - 1) {
-                        sb.append(seperator);
-                    }
                     Player player = players.get(i);
                     if (player.hasPermission("watson.register")) {
                         sb.append(allowed);
@@ -45,6 +42,9 @@ public class CommandWatson implements CommandExecutor, TabExecutor {
                         sb.append(disallowed);
                     }
                     sb.append(player.getPlayerListName());
+                    if (i < players.size() - 1) {
+                        sb.append(seperator);
+                    }
                 }
                 sender.sendMessage(plugin.color(sb.toString()));
                 return true;
